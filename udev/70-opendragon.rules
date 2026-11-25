@@ -1,0 +1,9 @@
+# opendragon: give the logged-in user access to the Redragon receivers' hidraw nodes.
+# Redragon M916-PRO-1K (CX receiver / wired)
+KERNEL=="hidraw*", ATTRS{idVendor}=="3554", ATTRS{idProduct}=="f5d5", TAG+="uaccess"
+KERNEL=="hidraw*", ATTRS{idVendor}=="3554", ATTRS{idProduct}=="f55d", TAG+="uaccess"
+KERNEL=="hidraw*", ATTRS{idVendor}=="3554", ATTRS{idProduct}=="f55e", TAG+="uaccess"
+KERNEL=="hidraw*", ATTRS{idVendor}=="3554", ATTRS{idProduct}=="f55f", TAG+="uaccess"
+# Redragon M901P-KS (Compx receiver / wired)
+KERNEL=="hidraw*", ATTRS{idVendor}=="25a7", ATTRS{idProduct}=="fa07", TAG+="uaccess"
+KERNEL=="hidraw*", ATTRS{idVendor}=="25a7", ATTRS{idProduct}=="fa08", TAG+="uaccess"
